@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FZT-Az-hHM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="EsteeLauder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ESTĒE LAUDER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dMG-K8-vYG">
+                                <rect key="frame" x="40" y="88" width="270" height="35"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="35"/>
+                                <color key="textColor" name="Text"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="woK-xF-cc8">
+                                <rect key="frame" x="37" y="278" width="340" height="340"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="340" id="5su-P2-GGG"/>
+                                    <constraint firstAttribute="width" constant="340" id="KW2-OS-8gN"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="CAJ-kB-rEX" appends="YES" id="6cI-tm-VOk"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="7" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="j0c-4W-gt4">
+                                <rect key="frame" x="20" y="628" width="374" height="244"/>
+                                <string key="text">Now with Chronolux™ Power Signal Technology, this deep- and fast-penetrating face serum reduces the look of multiple signs of aging caused by the environmental assaults of modern life.</string>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="23"/>
+                                <color key="textColor" name="Text"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pcc-pb-nk8">
+                                <rect key="frame" x="37" y="168" width="340" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="340" id="I1i-Ko-TD1"/>
+                                    <constraint firstAttribute="height" constant="40" id="qvA-6W-ot3"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Advanced Night Repair">
+                                    <fontDescription key="titleFontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="28"/>
+                                    <color key="baseForegroundColor" name="AccentDark"/>
+                                    <color key="baseBackgroundColor" name="AccentLight"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="3hb-HA-v8O" kind="show" id="6XJ-te-Rx2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wO0-f9-uuF">
+                                <rect key="frame" x="307" y="303" width="70" height="290"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="aQn-U6-8oD"/>
+                                    <constraint firstAttribute="height" constant="290" id="vTi-2x-eeB"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="&gt;">
+                                    <fontDescription key="titleFontDescription" name="KohinoorGujarati-Bold" family="Kohinoor Gujarati" pointSize="20"/>
+                                    <color key="baseForegroundColor" name="Text"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="nextBut:" destination="BYZ-38-t0r" eventType="touchUpInside" id="blC-yb-Abr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pF3-qe-nEA">
+                                <rect key="frame" x="37" y="303" width="70" height="290"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="290" id="0jz-g3-bOb"/>
+                                    <constraint firstAttribute="width" constant="70" id="V5Z-CZ-mBG"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="&lt;">
+                                    <fontDescription key="titleFontDescription" name="KohinoorGujarati-Bold" family="Kohinoor Gujarati" pointSize="20"/>
+                                    <color key="baseForegroundColor" name="Text"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="prevBut:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PP0-OR-RK1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="Background"/>
+                        <color key="tintColor" name="AccentDark"/>
+                        <constraints>
+                            <constraint firstItem="j0c-4W-gt4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3GA-i2-8vk"/>
+                            <constraint firstItem="wO0-f9-uuF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4wf-cX-0Ly"/>
+                            <constraint firstItem="woK-xF-cc8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BrW-qK-OOC"/>
+                            <constraint firstItem="pF3-qe-nEA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="CEx-Jn-mFu"/>
+                            <constraint firstItem="j0c-4W-gt4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cei-Gh-hIJ"/>
+                            <constraint firstItem="dMG-K8-vYG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="DPW-2j-FMt"/>
+                            <constraint firstItem="Pcc-pb-nk8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dl2-eO-7Mf"/>
+                            <constraint firstItem="Pcc-pb-nk8" firstAttribute="top" secondItem="dMG-K8-vYG" secondAttribute="bottom" constant="45" id="MKE-DV-QkE"/>
+                            <constraint firstItem="woK-xF-cc8" firstAttribute="top" secondItem="Pcc-pb-nk8" secondAttribute="bottom" priority="200" constant="63" id="PpP-wt-fe6"/>
+                            <constraint firstItem="woK-xF-cc8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QMx-Od-6La"/>
+                            <constraint firstItem="pF3-qe-nEA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="T5M-Cr-frc"/>
+                            <constraint firstItem="dMG-K8-vYG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Zdo-FT-qUd"/>
+                            <constraint firstItem="j0c-4W-gt4" firstAttribute="top" secondItem="woK-xF-cc8" secondAttribute="bottom" constant="10" id="cJE-hh-kqj"/>
+                            <constraint firstItem="j0c-4W-gt4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="kB0-dI-AVA"/>
+                            <constraint firstItem="j0c-4W-gt4" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="10" id="kZg-sn-332"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wO0-f9-uuF" secondAttribute="trailing" constant="37" id="vEH-yJ-Shq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="j0c-4W-gt4" secondAttribute="trailing" constant="20" id="zie-KI-1om"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="237-T8-p1O"/>
+                    <connections>
+                        <outlet property="detailsButton" destination="Pcc-pb-nk8" id="tTC-kM-ReR"/>
+                        <outlet property="imageView" destination="woK-xF-cc8" id="EZm-2J-NgP"/>
+                        <outlet property="titleLabel" destination="dMG-K8-vYG" id="lHW-LF-ney"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer requiresExclusiveTouchType="NO" direction="right" id="CAJ-kB-rEX"/>
+            </objects>
+            <point key="canvasLocation" x="494" y="68"/>
+        </scene>
+        <!--THE #1 SERUM IN THE U.S.*-->
+        <scene sceneID="ndO-y9-uDS">
+            <objects>
+                <viewController id="3hb-HA-v8O" customClass="DetailsViewController" customModule="EsteeLauder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sGk-Wv-M7N">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="ucq-66-zdf">
+                                <rect key="frame" x="37" y="816" width="340" height="36"/>
+                                <string key="text">*The NPD Group, Inc. / U.S. Prestige Beauty Total Department/Specialty, Face Skincare Product Layer, Prestige Brand Classification, Unit Sales, 12 months ending May 2022.</string>
+                                <fontDescription key="fontDescription" name="HoeflerText-Italic" family="Hoefler Text" pointSize="12"/>
+                                <color key="textColor" name="Text"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="igb-hu-coy">
+                                <rect key="frame" x="121" y="751" width="172" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="LEARN MORE">
+                                    <fontDescription key="titleFontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="21"/>
+                                    <color key="baseForegroundColor" name="AccentDark"/>
+                                    <color key="baseBackgroundColor" name="AccentLight"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="27P-3D-NeK" kind="presentation" modalPresentationStyle="automatic" id="N5Q-4s-HvO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buj-0L-R1t">
+                                <rect key="frame" x="37" y="626" width="340" height="100"/>
+                                <string key="text">Advanced Night Repair harnesses the restorative power of night to deliver visible renewal. It works night and day to help skin maximize its overall natural rhythm of repair and protection.</string>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="20"/>
+                                <color key="textColor" name="Text"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9P-tg-1ui">
+                                <rect key="frame" x="37" y="136" width="340" height="100"/>
+                                <string key="text">Proven effective for all skintones. This is the high performance face serum beautiful skin can’t live without.
+
+</string>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="20"/>
+                                <color key="textColor" name="Text"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iOF-KG-BPr">
+                                <rect key="frame" x="37" y="261" width="340" height="340"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="340" id="9nW-KD-DYr"/>
+                                    <constraint firstAttribute="height" constant="340" id="XD2-Wd-Jv0"/>
+                                    <constraint firstAttribute="width" constant="340" id="eUY-Kb-EFA"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="340" id="v78-9M-FzW"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jim-IK-0nR">
+                                <rect key="frame" x="307" y="286" width="70" height="290"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="290" id="8Ro-lS-Yeb"/>
+                                    <constraint firstAttribute="width" constant="70" id="Hdd-p9-OXX"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="&gt;">
+                                    <fontDescription key="titleFontDescription" name="KohinoorGujarati-Bold" family="Kohinoor Gujarati" pointSize="20"/>
+                                    <color key="baseForegroundColor" name="Text"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="nextBut:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6PY-ZJ-dtN"/>
+                                    <action selector="nextBut:" destination="3hb-HA-v8O" eventType="touchUpInside" id="FO8-ce-Wib"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccD-zr-qPS">
+                                <rect key="frame" x="37" y="286" width="70" height="290"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="290" id="RIx-Zb-B9d"/>
+                                    <constraint firstAttribute="width" constant="70" id="xgq-Vt-8dF"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="&lt;">
+                                    <fontDescription key="titleFontDescription" name="KohinoorGujarati-Bold" family="Kohinoor Gujarati" pointSize="20"/>
+                                    <color key="baseForegroundColor" name="Text"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="prevBut:" destination="3hb-HA-v8O" eventType="touchUpInside" id="3Ye-ff-AIK"/>
+                                    <action selector="prevBut:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jag-c8-5WY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Cgm-xu-9Xm"/>
+                        <color key="backgroundColor" name="Background"/>
+                        <color key="tintColor" name="AccentDark"/>
+                        <constraints>
+                            <constraint firstItem="buj-0L-R1t" firstAttribute="top" secondItem="ccD-zr-qPS" secondAttribute="bottom" constant="50" id="06I-eu-vNh"/>
+                            <constraint firstItem="ucq-66-zdf" firstAttribute="leading" secondItem="sGk-Wv-M7N" secondAttribute="leading" constant="37" id="5XD-11-J1p"/>
+                            <constraint firstItem="buj-0L-R1t" firstAttribute="centerX" secondItem="sGk-Wv-M7N" secondAttribute="centerX" id="6qn-6W-CL9"/>
+                            <constraint firstItem="ucq-66-zdf" firstAttribute="centerX" secondItem="sGk-Wv-M7N" secondAttribute="centerX" id="8gR-ht-nVX"/>
+                            <constraint firstItem="v9P-tg-1ui" firstAttribute="leading" secondItem="Cgm-xu-9Xm" secondAttribute="leading" constant="37" id="CWd-Cj-ah6"/>
+                            <constraint firstItem="Cgm-xu-9Xm" firstAttribute="trailing" secondItem="v9P-tg-1ui" secondAttribute="trailing" constant="37" id="Eaz-ia-cXI"/>
+                            <constraint firstItem="ccD-zr-qPS" firstAttribute="top" secondItem="v9P-tg-1ui" secondAttribute="bottom" constant="50" id="FH8-bk-nHk"/>
+                            <constraint firstItem="Cgm-xu-9Xm" firstAttribute="trailing" secondItem="buj-0L-R1t" secondAttribute="trailing" constant="37" id="JVJ-5d-7nb"/>
+                            <constraint firstItem="buj-0L-R1t" firstAttribute="leading" secondItem="Cgm-xu-9Xm" secondAttribute="leading" constant="37" id="P2C-wy-kO6"/>
+                            <constraint firstItem="Cgm-xu-9Xm" firstAttribute="trailing" secondItem="Jim-IK-0nR" secondAttribute="trailing" constant="37" id="PBu-ZU-p2e"/>
+                            <constraint firstItem="Cgm-xu-9Xm" firstAttribute="bottom" secondItem="ucq-66-zdf" secondAttribute="bottom" constant="10" id="RWa-Y2-qT0"/>
+                            <constraint firstItem="ucq-66-zdf" firstAttribute="top" secondItem="igb-hu-coy" secondAttribute="bottom" constant="30" id="feM-nR-Y6t"/>
+                            <constraint firstItem="v9P-tg-1ui" firstAttribute="centerX" secondItem="sGk-Wv-M7N" secondAttribute="centerX" id="gjb-yC-9jr"/>
+                            <constraint firstItem="ccD-zr-qPS" firstAttribute="leading" secondItem="Cgm-xu-9Xm" secondAttribute="leading" constant="37" id="gzK-rs-zm6"/>
+                            <constraint firstItem="Cgm-xu-9Xm" firstAttribute="trailing" secondItem="ucq-66-zdf" secondAttribute="trailing" constant="37" id="jUK-LO-bEd"/>
+                            <constraint firstItem="iOF-KG-BPr" firstAttribute="leading" secondItem="Cgm-xu-9Xm" secondAttribute="leading" constant="37" id="lhd-y6-Ntc"/>
+                            <constraint firstItem="igb-hu-coy" firstAttribute="top" secondItem="buj-0L-R1t" secondAttribute="bottom" constant="25" id="m9k-GW-c8p"/>
+                            <constraint firstItem="buj-0L-R1t" firstAttribute="top" secondItem="iOF-KG-BPr" secondAttribute="bottom" constant="25" id="o3d-te-3fi"/>
+                            <constraint firstItem="iOF-KG-BPr" firstAttribute="top" secondItem="v9P-tg-1ui" secondAttribute="bottom" constant="25" id="q4Y-Fg-gIb"/>
+                            <constraint firstItem="Jim-IK-0nR" firstAttribute="top" secondItem="v9P-tg-1ui" secondAttribute="bottom" constant="50" id="sZ5-Y8-kyT"/>
+                            <constraint firstItem="igb-hu-coy" firstAttribute="centerX" secondItem="sGk-Wv-M7N" secondAttribute="centerX" id="tAz-A6-ofn"/>
+                            <constraint firstItem="buj-0L-R1t" firstAttribute="top" secondItem="Jim-IK-0nR" secondAttribute="bottom" constant="50" id="uOF-J4-A8R"/>
+                            <constraint firstItem="Cgm-xu-9Xm" firstAttribute="trailing" secondItem="iOF-KG-BPr" secondAttribute="trailing" constant="37" id="vYW-my-zL6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="THE #1 SERUM IN THE U.S.*" id="ENm-ec-k9J"/>
+                    <connections>
+                        <outlet property="detailsButton" destination="igb-hu-coy" id="u3h-FJ-JXh"/>
+                        <outlet property="imageView" destination="iOF-KG-BPr" id="rUd-yh-cBA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xsh-zH-PaB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1189.8550724637682" y="67.633928571428569"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="uX4-Mw-DZZ">
+            <objects>
+                <viewController modalPresentationStyle="overFullScreen" interfaceStyle="dark" id="27P-3D-NeK" customClass="WebViewController" customModule="EsteeLauder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="blg-Wv-UCo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Tp4-pB-Z4N"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="uHN-vc-Zwk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rMr-e9-I2M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1991" y="68"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="v9c-we-xXA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FZT-Az-hHM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="h90-be-PVh">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" name="AccentLight"/>
+                        <color key="barTintColor" name="AccentDark"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="23"/>
+                            <color key="textColor" name="Text"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="2gj-Ba-5Vd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LgK-on-8ph" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-254" y="68"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentDark">
+            <color red="0.054901960784313725" green="0.12549019607843137" blue="0.24705882352941178" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="AccentLight">
+            <color red="0.77999997138977051" green="0.63899999856948853" blue="0.31400001049041748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Background">
+            <color red="0.18823529411764706" green="0.082352941176470587" blue="0.058823529411764705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Text">
+            <color red="0.92941176470588238" green="0.83921568627450982" blue="0.68235294117647061" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
